@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CR Template</title>
+ <style>
+  .General-body{
+    background-color: white;
+    width: 450px;
+    height: 500px;
+  }
+  
+  .header-logo{
+    background-color: rgb(178, 190, 181);
+    width: 450px;
+    height: 100px; 
+    border-radius: 8px;
+    vertical-align: auto;
+  }
+    .snowlogo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 130px;
+      height: 100px;
+      
+    }
+    
+  .grid-container {
+    display: grid;
+    grid-template-columns: 150px  1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    
+  }
+    .text-Amount{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: Arial;
+      color:rgb(96, 96, 96);
+      padding-left: 10px;
+      padding-top: 20px;
+      line-height: 45px;
+      font-family: Arial;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center; 
+      
+    }
+    .Naira-sign,
+    .CR-sign{
+        font-size: 12px;
+    }
+
+      .grid-item{
+        font-size: 13px;
+      font-family: Arial;
+      color:rgb(96, 96, 96);
+      padding-left: 10px; 
+      line-height: 30px;
+      border-bottom-style: ridge; 
+     
+      }
+
+</style>
+
+</head>
+<body>
+    <div class="General-body">
+      <div class="header-logo">
+        <img src="snowlogo.jpg" alt="snow" 
+          class="snowlogo">
+
+      </div>
+      <div class="body-text">
+       
+        <p class="text-Amount">
+          <span class="Naira-sign"> &#x20A6; </span> 
+            500,000.00
+           <span class="CR-sign">CR</span>
+       </p>
+       <div class="grid-container">
+        <!-----Account Number-->
+        <div class="grid-item" >
+          <p class="class-textaccountnum">
+            Account Number
+          </p>
+        </div>
+        <div class="grid-item" >
+          <p class="class-accountNumber">
+            0054148251
+          </p>     
+        </div>
+        <!-----Account Name-->
+        <div class="grid-item">
+          <p class="class-txtaccountname">
+            Account Name
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="class-txtaccountname2">
+            Snow Microfinance Bank Limited Boluwatifemi oluwakemi ajayi
+          </p>     
+        </div>
+
+        <!-----Narration-->
+        <div class="grid-item">
+          <p class="class-txtNarration">
+            Narration
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="class-txtNarration2">
+            Transfer from Najeem Rasaq Olalekan
+          </p>   
+        </div>
+           <!-----Transaction Reference-->
+        <div class="grid-item">
+          <p class="class-txtReference">
+            Transaction Reference
+          </p>
+        </div>
+        <div class="grid-item">
+          <p class="class-txtReference2">
+            S98687412
+          </p>   
+        </div>
+
+          <!-----Date and Time-->
+          <div class="grid-item">
+            <p class="class-txtDatetime">
+              Date/Time
+            </p>
+          </div>
+          <div class="grid-item">
+            <p class="class-txtDatetime2">
+              Mar 19, 2023 10:55: 06pm
+            </p>   
+          </div>
+
+           <!-----Available Balance-->
+           <div class="grid-item">
+            <p class="class-txtAvailabeBal">
+              Available Balance
+            </p>
+          </div>
+          <div class="grid-item">
+            <p class="class-txtAvailabeBal">
+              500,000.00
+            </p>   
+          </div>
+
+       </div>
+
+
+      </div>
+
+    </div>
+  
+</body>
+</html>
