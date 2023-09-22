@@ -8,13 +8,15 @@
  <style>
   .General-body{
     background-color: white;
-    width: 450px;
-    height: 500px;
+    width: 470px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 10px;
   }
   
   .header-logo{
     background-color: rgb(178, 190, 181);
-    width: 450px;
+    width: 470px;
     height: 100px; 
     border-radius: 8px;
     vertical-align: auto;
@@ -32,9 +34,9 @@
     
   .grid-container {
     display: grid;
-    grid-template-columns: 150px  1fr;
+    grid-template-columns: 153px  1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 5px;
+    grid-row-gap: 7px;
     
   }
     .text-Amount{
@@ -57,13 +59,21 @@
     }
 
       .grid-item{
-        font-size: 13px;
+        font-size: 14px;
       font-family: Arial;
       color:rgb(96, 96, 96);
       padding-left: 10px; 
       line-height: 30px;
       border-bottom-style: ridge; 
      
+      }
+      .email-contact{
+        font-size: 13px;
+        font-family: Arial;
+        color:rgb(96, 96, 96);
+        padding-top: 4px;
+        padding-left: 10px;
+        padding-bottom: 10px;
       }
 
 </style>
@@ -72,15 +82,17 @@
 <body>
     <div class="General-body">
       <div class="header-logo">
-        <img src="snowlogo.jpg" alt="snow" 
+        <img src="https://lekan1234.github.io/CliqBemailsmsalert/snowlogo.jpg" alt="snow" 
           class="snowlogo">
+
+          
 
       </div>
       <div class="body-text">
        
         <p class="text-Amount">
           <span class="Naira-sign"> &#x20A6; </span> 
-            500,000.00
+            {amount}
            <span class="CR-sign">CR</span>
        </p>
        <div class="grid-container">
@@ -92,7 +104,7 @@
         </div>
         <div class="grid-item" >
           <p class="class-accountNumber">
-            0054148251
+            {account}
           </p>     
         </div>
         <!-----Account Name-->
@@ -103,7 +115,7 @@
         </div>
         <div class="grid-item">
           <p class="class-txtaccountname2">
-            Snow Microfinance Bank Limited Boluwatifemi oluwakemi ajayi
+            {customername}
           </p>     
         </div>
 
@@ -115,7 +127,7 @@
         </div>
         <div class="grid-item">
           <p class="class-txtNarration2">
-            Transfer from Najeem Rasaq Olalekan
+            {narration}
           </p>   
         </div>
            <!-----Transaction Reference-->
@@ -126,7 +138,7 @@
         </div>
         <div class="grid-item">
           <p class="class-txtReference2">
-            S98687412
+            {reference}
           </p>   
         </div>
 
@@ -138,7 +150,7 @@
           </div>
           <div class="grid-item">
             <p class="class-txtDatetime2">
-              Mar 19, 2023 10:55: 06pm
+              {systemdate}
             </p>   
           </div>
 
@@ -150,15 +162,23 @@
           </div>
           <div class="grid-item">
             <p class="class-txtAvailabeBal">
-              500,000.00
+              {balance}
             </p>   
           </div>
+          
 
        </div>
 
 
       </div>
-
+      <div class="email-contact">
+      <p>
+        If you don't recognize this transaction, please immediately contact SnowMFB
+        on 01-4542877 or email snowmfb@snowmfb.com.ng
+        <br> Thank you for Banking with us.
+      </p>
+      
+    </div>
     </div>
   
 </body>
